@@ -55,3 +55,10 @@ vars:
       apiVersion: v1
       kind: ConfigMap
       name: odh-model-controller-parameters
+  - fieldref:
+      fieldPath:data.torchserve-image
+    name: torchserve-image
+    objref:
+      apiVersion: v1
+      kind: ConfigMap
+      name: odh-model-controller-parameters
